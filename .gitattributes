@@ -1,2 +1,86 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-input"
+            id="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1 class="current-city" id="current-city">Orlando</h1>
+            <p class="current-details">
+              <span id="current-date"></span>
+              Saturday 1:00, clear skies and sunny<br />
+              Humidity: <strong>0%</strong>, Wind: <strong>4.5mph</strong>
+            </p>
+          </div>
+          <div class="current-temperature"></div>
+          <span class="current-temperature-icon">🌞</span>
+          <span class="current-temperature-value" id="current-temperature"
+            >75</span
+          >
+          <span class="current-temperature-unit">°F</span>
+        </div>
+        <div class="forecast-weather">
+          <ul>
+            <li>
+              Sun🌤️
+              <br />
+              <strong>65&deg;F</strong> - 70&deg;F
+            </li>
+            <li>
+              Mon🌤️
+              <br />
+              <strong>65&deg;F</strong> - 70&deg;F
+            </li>
+            <li>
+              Tue🌤️
+              <br />
+              <strong>65&deg;F</strong> - 70&deg;F
+            </li>
+            <li>
+              Wed🌤️
+              <br />
+              <strong>65&deg;F</strong> - 70&deg;F
+            </li>
+            <li>
+              Thu🌤️
+              <br />
+              <strong>65&deg;F</strong> - 70&deg;F
+            </li>
+            <li>
+              Fri🌤️
+              <br />
+              <strong>65&deg;F</strong> - 70&deg;F
+            </li>
+            <li>
+              Sat🌤️
+              <br />
+              <strong>65&deg;F</strong> - 70&deg;F
+            </li>
+          </ul>
+        </div>
+      </main>
+      <footer>Coded by Nikki Shuford</footer>
+    </div>
+  </body>
+  <script src="src/index.js"></script>
+</html>
