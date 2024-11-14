@@ -4,40 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
-    <style></style>
+    <style>
+      h1 {
+        font-family: cursive;
+      }
+    </style>
   </head>
   <body>
-    <div class="weather-app">
+    <div class="weath-app">
       <header>
-        <form id="search-form">
-          <input
-            type="search"
-            placeholder="Enter a city.."
-            required
-            class="search-input"
-            id="search-input"
-          />
-          <input type="submit" value="Search" class="search-button" />
+        <form>
+          <input type="search" placeholder="Enter a city.." required />
+          <input type="submit" value="Search" />
         </form>
       </header>
       <main>
         <div class="current-weather">
           <div>
-            <h1 class="current-city" id="current-city">Orlando</h1>
-            <p class="current-details">
-              <span id="current-date"></span>
+            <h1>Orlando</h1>
+            <p>
               Saturday 1:00, clear skies and sunny<br />
               Humidity: <strong>0%</strong>, Wind: <strong>4.5mph</strong>
             </p>
           </div>
-          <div class="current-temperature"></div>
-          <span class="current-temperature-icon">🌞</span>
-          <span class="current-temperature-value" id="current-temperature"
-            >75</span
-          >
-          <span class="current-temperature-unit">°F</span>
+          <div>☀️65&deg;F</div>
         </div>
         <div class="forecast-weather">
           <ul>
@@ -82,5 +73,4 @@
       <footer>Coded by Nikki Shuford</footer>
     </div>
   </body>
-  <script src="src/index.js"></script>
 </html>
